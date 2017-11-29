@@ -1,0 +1,249 @@
+@CHARSET "UTF-8";
+
+.wrap .content a{
+	color:#ffffff;
+	text-decoration:none;	
+}
+
+.wrap .content .first-area {
+	height:450px;
+}
+
+.wrap .content .first-area .grid-1{
+	width:49%;
+	float:left;
+	margin-left:10px;
+	position:relative;
+}
+
+.wrap .content .first-area .grid-1 img{
+	width:100%;
+	height:450px;
+}
+
+.wrap .content .first-area .grid-1 .post-info{
+	width:100%;
+	height:150px;
+	display:block;
+	position:absolute;
+	top:300px;
+	background-color: rgba(128, 128, 128, 0.7);
+	z-index:1;
+	padding:10px;
+	color:#ffffff;
+}
+
+.wrap .content .first-area .grid-1 .post-info .post-title{
+	width:90%;
+	font-size: 20px;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	word-wrap: normal !important;
+	display: block;
+	display:inline-block;
+}
+
+.wrap .content .first-area .grid-1 .post-info  .post-desc{
+	width:90%;
+	font-size: 13px;
+	margin-top:8px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: normal;
+	line-height: 18px;
+	height:36px;
+	word-wrap: break-word;
+	display: -webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+}
+
+.wrap .content .first-area .grid-1 .post-info .post-user{
+	height:50px;
+	margin-top:20px;
+}
+
+.wrap .content .first-area .grid-1 .post-info .post-user .heart{
+	width:16px;
+	height:16px;
+	margin-top:10px;
+	margin-left:75%;
+}
+
+.wrap .content .first-area .grid-1 .post-info .post-user .user-img{
+	width:40px;
+	height:40px;
+	float:left;
+}
+
+.wrap .content .first-area .grid-1 .post-info .post-user .user-img img{
+	width:40px;
+	height:40px;
+}
+
+.wrap .content .first-area .grid-1 .post-info .post-user .user-name{
+	font-size:13px;
+	margin-top:10px;
+	margin-left:10px;
+	float:left;
+}
+
+.wrap .content .first-area .grid-1 .post-info .post-user .count{
+	font-size:13px;
+	margin-top:10px;
+	margin-right:10px;
+	float:right
+}
+
+.wrap .content .second-area{
+	height:250px;
+	margin-top:10px;
+}
+
+.wrap .content .second-area .grid-2{
+	width:49%;
+	float:left;
+	margin-left:10px;
+	position:relative;
+}
+
+.wrap .content .second-area .grid-2 img{
+	width:100%;
+	height:250px;
+}
+
+.wrap .content .second-area .grid-2 .post-info{
+	width:100%;
+	height:100px;
+	display:block;
+	position:absolute;
+	top:150px;
+	background-color: rgba(128, 128, 128, 0.7);
+	z-index:1;
+	padding:10px;
+	color:#ffffff;
+}
+
+.wrap .content .second-area .grid-2 .post-info .post-title{
+	width:90%;
+	font-size: 20px;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	word-wrap: normal !important;
+	display: block;
+	display:inline-block;
+}
+
+.wrap .content .second-area .grid-2 .post-info .post-user{
+	height:50px;
+	margin-top:15px;
+}
+
+.wrap .content .second-area .grid-2 .post-info .post-user .heart{
+	width:16px;
+	height:16px;
+	margin-top:10px;
+	margin-left:75%;
+}
+
+.wrap .content .second-area .grid-2 .post-info .post-user .user-img{
+	width:40px;
+	height:40px;
+	float:left;
+}
+
+.wrap .content .second-area .grid-2 .post-info .post-user .user-img img{
+	width:40px;
+	height:40px;
+}
+
+.wrap .content .second-area .grid-2 .post-info .post-user .user-name{
+	font-size:13px;
+	margin-top:10px;
+	margin-left:10px;
+	float:left;
+}
+
+.wrap .content .second-area .grid-2 .post-info .post-user .count{
+	font-size:13px;
+	margin-top:10px;
+	margin-right:10px;
+	float:right
+}
+
+.wrap .content .second-area .grid-3{
+	width:24%;
+	float:left;
+	margin-left:10px;
+	position:relative;
+}
+
+.wrap .content .second-area .grid-3 img{
+	width:100%;
+	height:250px;
+}
+
+.wrap .content .second-area .grid-3 .post-info{
+	width:100%;
+	height:100px;
+	display:block;
+	position:absolute;
+	top:150px;
+	background-color: rgba(128, 128, 128, 0.7);
+	z-index:1;
+	padding:10px;
+	color:#ffffff;
+}
+
+.wrap .content .second-area .grid-3 .post-info .post-title{
+	width:90%;
+	font-size: 20px;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	word-wrap: normal !important;
+	display: block;
+	display:inline-block;
+}
+
+.wrap .content .second-area .grid-3 .post-info .post-user{
+	height:50px;
+	margin-top:15px;
+}
+
+.wrap .content .second-area .grid-3 .post-info .post-user .user-img{
+	width:40px;
+	height:40px;
+	float:left;
+}
+
+.wrap .content .second-area .grid-3 .post-info .post-user .heart{
+	width:16px;
+	height:16px;
+	margin-top:10px;
+	margin-left:48%;
+}
+
+.wrap .content .second-area .grid-3 .post-info .post-user .user-img img{
+	width:40px;
+	height:40px;
+}
+
+.wrap .content .second-area .grid-3 .post-info .post-user .user-name{
+	font-size:13px;
+	margin-top:10px;
+	margin-left:10px;
+	float:left;
+}
+
+.wrap .content .second-area .grid-3 .post-info .post-user .count{
+	font-size:13px;
+	margin-top:10px;
+	margin-right:10px;
+	float:right
+}

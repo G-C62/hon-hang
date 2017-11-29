@@ -1,0 +1,311 @@
+@CHARSET "UTF-8";
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+input {
+	border-radius: 3px;
+	border-width: 0px;
+	color: gray;
+}
+
+input:focus {
+	outline: none;
+}
+
+p {
+	margin: 0;
+}
+
+.opacity_bg_layer {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .5;
+	filter: alpha(opacity = 50);
+	z-index: 10;
+}
+
+.layer_pop_center {
+	position: fixed;
+	background: white;
+	z-index: 1;
+	height: 200px;
+	width: 50%;
+	color: #25aae1;
+}
+
+.modal_header {
+	padding: 10px;
+	font-size: 20px;
+	font-weight: 600;
+	border-bottom: solid #9c9c9c;
+}
+
+.modal_close {
+	float: right;
+	color: gray;
+}
+
+.modal_body ul {
+	display: -webkit-flex;
+	display: flex;
+	line-height: 160px;
+	margin: 0;
+}
+
+.modal_body li {
+	-webkit-flex: 1;
+	flex: 1;
+	text-align: center;
+}
+
+.modal_body img {
+	-webkit-flex: 1;
+	flex: 1;
+	width: 90%;
+}
+
+.header {
+	border-bottom: solid 1px #25aae1;
+}
+
+.header .logo {
+	width: 100px;
+	margin-left: 20px;
+}
+
+.header .login {
+	float: right;
+	width: 30%;
+	margin: 5px;
+}
+
+.header .info {
+	float: left;
+	width: 30%;
+	margin-left: 35%;
+	margin-top: 3px;
+}
+
+.header .info span {
+	position: absolute;
+	margin: 15px;
+}
+
+.navigator {
+	width: 100%;
+	height: 10%;
+	background-color: white;
+	padding: 10px;
+}
+
+.navigator option:first-child {
+	display: none;
+}
+
+.menu {
+	float: right;
+}
+
+.menu a {
+	color: #25aae1;
+	padding: 0px 10px 0px 10px;
+}
+
+.navigator form, .menu, .menu div {
+	display: inline-block;
+}
+
+.search {
+	vertical-align: middle;
+	width: 30px;
+}
+
+.navigator form {
+	text-align: right;
+	width: 61%;
+}
+
+.navigator form input {
+	vertical-align: middle;
+	font-size: 17px;
+	background-color: aliceblue;
+}
+
+.product_con {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	padding: 15px 0px 15px 0px;
+}
+
+.product_con .product_list {
+	position: relative;
+	display: inline-block;
+}
+
+.btn_prev {
+	display: inline-block;
+	position: relative;
+	right: 40px;
+	bottom: 166px;
+}
+
+.btn_next {
+	display: inline-block;
+	position: relative;
+	left: 40px;
+	bottom: 166px;
+}
+
+.product_con .product_list li {
+	position: absolute;
+	left: 0;
+}
+
+.product_con .product_list li:nth-child(1) {
+	left: 0px;
+	position: relative;
+}
+
+.product_con .product_list li:nth-child(2), .product_list li:nth-child(3)
+	{
+	left: 200px;
+}
+
+.product_list img {
+	width: 500px;
+}
+
+.thumb_area {
+	text-align: left;
+	background-color: #f3f3f3;
+	padding-top: 30px;
+}
+
+.thumb_subject {
+	font-size: 30px;
+	margin: 20px;
+}
+
+.thumb_row {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.thumbnail {
+	display: inline-block;
+	margin: 5px 30px 50px 30px;
+}
+
+.thumbnail img {
+	width: 100%;
+}
+
+.thumbnail .img_area {
+	width: 300px;
+	background-color: white;
+}
+
+.thumbnail .text_area {
+	text-align: left;
+	padding: 0px 15px 0px 15px;
+	background-color: white;
+}
+
+.thumb_title {
+	font-size: 22px;
+}
+
+.thumb_info {
+	font-size: 14px;
+}
+
+.thumb_editor {
+	margin: 0;
+	padding: 40px 0px 10px 0px;
+	text-align: right;
+}
+
+.content {
+	width: 100%;
+	min-width: 1050px;
+}
+
+.side_bar {
+	width: 250px;
+	float: left;
+	position: fixed;
+	text-align: center;
+}
+
+.category_list {
+	display: block;
+	padding-bottom: 10px;
+	font-size: 18px;
+}
+
+.category_list:hover {
+	color: #25aae1;
+	font-weight: bold;
+}
+
+.content_background {
+	width: 80%;
+	float: right;
+	text-align: left;
+	padding-left: 20px;
+	background-color: #eee;
+}
+
+.content_background .content_view {
+	width: 90%;
+	background-color: #fff;
+	min-height: 800px;
+}
+
+.content_background table{
+	width: 100%;
+}
+
+.content_background .content_view .content_title {
+	text-align: center;
+}
+
+.content_background .content_view .content_date {
+	text-align: right;
+	margin-right: 10px;
+	color: gray;
+}
+
+.content_background .content_view .content_post {
+	margin: 20px;
+}
+
+.content_background .content_view .content_admin {
+	padding: 20px;
+	text-align: right;
+}

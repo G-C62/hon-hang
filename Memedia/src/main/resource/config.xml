@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.honhang.model.user.UserVO" alias="User"/>
+		<typeAlias type="com.honhang.model.schedule.ScheduleVO" alias="Schedule"/>
+		<typeAlias type="com.honhang.model.follow.FollowVO" alias="Follow"/>
+	</typeAliases>
+	<mappers>
+		<mapper resource="UserMapper.xml"/>
+		<mapper resource="ScheduleMapper.xml"/>
+		<mapper resource="FollowMapper.xml"/>
+	</mappers>
+</configuration>

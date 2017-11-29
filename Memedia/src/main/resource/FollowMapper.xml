@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Follow">
+	<sql id="select">
+		select * from user_follow
+	</sql>
+
+	<select id="selectFollowing" parameterType="String" resultType="Follow">
+		<include refid="select" />
+		where user_id = #{user_id}
+	</select>
+
+	<select id="selectFollower" parameterType="String" resultType="Follow">
+		<include refid="select" />
+		where follow_user_id = #{follow_user_id}
+	</select>
+
+	<select id="followerCount" parameterType="String" resultType="String">
+		select count(*) from user_follow where follow_user_id = #{follow_user_id}
+	</select>
+
+	<select id="followingCount" parameterType="String" resultType="String">
+		select count(*) from user_follow where user_id = #{user_id}
+	</select>
+
+	<insert id="insert" parameterType="Follow">
+		insert into
+		user_follow(user_id, follow_user_id)
+		values(${user_id}, ${follow_user_id})
+	</insert>
+
+	<delete id="delete" parameterType="Follow">
+		delete from user_follow
+		where user_id=${user_id} and follow_user_id=${follow_user_id}
+	</delete>
+</mapper>
